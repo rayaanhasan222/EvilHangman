@@ -19,6 +19,10 @@ public class HangmanManager
 				wordsConsidered.add(word);
 			}
 		}
+		patternDisplayed = "";
+		for (int i = 0; i < length; i++) {
+			patternDisplayed += "_";
+		}
 	}
 	
 	public Set<String> words()
