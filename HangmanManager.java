@@ -8,7 +8,11 @@ public class HangmanManager
     private SortedSet<Character> lettersGuessed; 
 	public HangmanManager( List<String> dictionary, int length, int max )
 	{
-		
+		if(length<1 || max<0) {
+			throw new IllegalArgumentException();
+		}
+		guessCount = max;
+		wordsConsidered = new TreeSet<String>();
 	}
 	
 	public Set<String> words()
