@@ -13,6 +13,12 @@ public class HangmanManager
 		}
 		guessCount = max;
 		wordsConsidered = new TreeSet<String>();
+		lettersGuesses = new TreeSet<Character>();
+		for (String word : dictionary) {
+			if(word.length()==length) {
+				wordsConsidered.add(word);
+			}
+		}
 	}
 	
 	public Set<String> words()
