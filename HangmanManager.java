@@ -87,11 +87,11 @@ public class HangmanManager
         int index = 0;
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) != guess) {
-                pattern += patternDisplayed.substring(index, index + 2);
+                pattern += patternDisplayed.substring(index, index + 1);
             } else {
                 pattern += guess + " ";
             }
-            index += 2;
+            index += 1;
         }
         return pattern;
     }
