@@ -21,7 +21,7 @@ public class HangmanManager
 		}
 		patternDisplayed = "";
 		for (int i = 0; i < length; i++) {
-			patternDisplayed += "_";
+			patternDisplayed += "-";
 		}
 	}
 	
